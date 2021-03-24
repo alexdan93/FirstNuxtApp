@@ -5,15 +5,12 @@
         <nuxt />
       </div>
     </div>
-    <transition name="fade">
-      <!--      <loader v-if="isLoading" />-->
-      <!--      loader-->
-    </transition>
-    <ctm-modal />
   </div>
 </template>
 <script>
+
 export default {
+
 };
 </script>
 <style lang="scss" scoped>
@@ -24,6 +21,8 @@ export default {
 .template {
   min-height: 100vh;
   overflow: hidden;
+  background-color: #000;
+
   &__content {
     display: flex;
     flex-direction: column;

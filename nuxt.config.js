@@ -38,6 +38,7 @@ export default {
     'bootstrap-vue/nuxt',
     'nuxt-i18n',
     'cookie-universal-nuxt',
+    '@nuxtjs/axios',
   ],
   build: {
     transpile: [

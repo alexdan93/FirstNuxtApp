@@ -1,2 +1,32 @@
+@mixin variables {
+  $green: #16e2a6;
+  $textColor: $green;
+  $borderColor: #4355d0;
+}
 
+@mixin box-shadow {
+  box-shadow:
+    0 0 .5rem #fff,
+    inset 0 0 .5rem #fff,
+    0 0 2rem $borderColor,
+    inset 0 0 2rem $borderColor,
+    0 0 4rem $borderColor,
+    inset 0 0 4rem $borderColor;
+}
+
+@mixin title-shadow {
+  text-shadow:
+    0.2rem 0.2rem 1rem #fff,
+    0 0 2rem $textColor,
+    0 0 4rem $textColor,
+    0 0 6rem $textColor,
+    0 0 8rem $textColor,
+    0 0 10rem $textColor;
+}
+
+@mixin text-shadow {
+  text-shadow:
+    0.2rem 0.2rem 1rem #fff,
+    0 0 6rem $textColor;
+}
 

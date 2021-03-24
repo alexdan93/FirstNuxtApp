@@ -16,7 +16,7 @@
   </transition>
 </template>
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import modals from '@/store/modals/modals';
 
 export default {
@@ -31,6 +31,9 @@ export default {
       isShow: 'modals/getIsShow',
       currentModalKey: 'modals/getCurrentModalKey',
       options: 'modals/getOptions',
+    }),
+    ...mapActions({
+      setUsers: 'users/setUsers',
     }),
   },
   methods: {
